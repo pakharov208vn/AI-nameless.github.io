@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Make questions with log-out sittuation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('https://icdn.dantri.com.vn/dansinh/2024/07/16/hero-1721106115487.png');
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main {
+            width: 450px;
+            height: 650px;
+            border-radius: 5px;
+            background-color: wheat; /* Màu nền của hộp */
+            position: relative;
+            font: message-box ;
+            display:block;
+            text-align: center;
+            justify-content: center;
+            font: message-box;
+            color: black;
+            font-size: 50px;
+        }   
+
+        #parts {
+            position: absolute;
+            top: 40%;
+            left: 10.5%;
+            right: 10.5%;
+            font: message-box;
+            font-size: 25px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"><h2 style="position:absolute; top:10%; left: 10.5%; right:10.5%; font-size: 40px;">Bài của quý thầy cô gồm bao nhiêu phần:</h2>
+        <input type="number" id="parts" placeholder="Nhập dạng số">
+
+        <p id="output-1"></p>
+    </div>
+
+    <script>
+        function getInputValue() {
+            const inputvalue = document.getElementById('parts').value;
+            if(inputvalue) {
+                
+            } else {
+                document.getElementById('output-1').textContent = 'vui lòng nhập một số!'
+            }
+        }
+    </script>
+</body>
+</html>

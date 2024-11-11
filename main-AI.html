@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            AI
+            AI - beta
         </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,9 @@
             .titlebox {
                 width: 100%;
                 height: 600px;
-                background-color: rgb(40, 66, 66);
+                background-image: url('https://www.boardworkseducation.com/wp-content/uploads/2021/10/education-technology.jpg');
+                background-size: 60%;
+                background-position: right;
                 position: relative;
                 display: flex;
                 justify-content: center; /* Căn giữa theo chiều ngang */
@@ -123,8 +125,8 @@
                 background-color: var(--main-head-color) ;
                 z-index: 1;
                 font: message-box ;
-                display:flex;
-                align-items:center;
+                display: flex;
+                align-items: center;
                 justify-content: center;
                 border-radius: 15px;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -144,7 +146,7 @@
             }
 
             .b3:hover {
-                background-color: goldenrod;
+                background-color: rgb(205, 200, 36);
             }
 
             .usable-bar {
@@ -159,7 +161,6 @@
             .icon {
                 width: 40px;
                 height: 40px;
-                background-color: blue;
                 display: inline-block;
                 border-radius: 15px;
                 position: relatives;
@@ -170,7 +171,7 @@
 
             .i5 {
                 background-image: url('powerpoint-svgrepo-com.svg');
-                background-color: red;
+                background-color: orange;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -178,7 +179,7 @@
 
             .i4 {
                 background-image: url('record-square-svgrepo-com.svg');
-                background-color: red;
+                background-color: orange;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -186,7 +187,7 @@
 
             .i3 {
                 background-image: url('sound-loud-svgrepo-com.svg');
-                background-color: red;
+                background-color: orange;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center; 
@@ -194,7 +195,7 @@
 
             .i2 {
                 background-image: url('text-field-focus-svgrepo-com.svg');
-                background-color: red;
+                background-color: orange;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -202,7 +203,7 @@
 
             .i1 {
                 background-image: url('image-svgrepo-com.svg');
-                background-color: red;
+                background-color: orange;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -276,7 +277,25 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        </style>
+
+            .svg1 {
+                position: absolute;
+                transform: translate(650px, -400px);
+                z-index: 1;
+            }
+            .ran-SVG1 {
+                transform: rotate(30deg);
+            }
+
+            .svg2 {
+                position: absolute;
+                transform: translate(670px, -90px);
+                z-index: 1;
+            }
+            .ran-SVG2 {
+                transform: rotate(-30deg);
+            }
+        </style>    
     </head>
     <body>
         <div class="mainbox">
@@ -288,6 +307,8 @@
             </div> 
 
             <div class="titlebox">
+                <div class="svg svg1"><img src="calculator-svgrepo-com.svg" class="ran-SVG1"></div>
+                <div class="svg svg2"><img src="apple-svgrepo-com.svg" class="ran-SVG2"></div>
                 <div class="open o1" id="o1"></div>
                 <div class="open o2" id="o2"></div>
                 <div class="open o3" id="o3"></div>
