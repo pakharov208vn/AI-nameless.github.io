@@ -132,6 +132,7 @@
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
                 margin: 80px 2.5px;
                 transition: transform 0.5s ease;
+                cursor: pointer;
             }
             .bbox:hover {
                 transform: translateY(-12px);
@@ -360,6 +361,12 @@
             const a2 = document.getElementById('a2');
             const a3 = document.getElementById('a3');
             const ad = document.getElementById('adbox');
+
+            // Handle click on b1
+            b1.addEventListener('click', function() {
+                window.location.href = 'staylogout_AI.html';
+            });
+
             // Khi hover vào box1, di chuyển box2
             b1.addEventListener('mouseenter', function() {
                 i1.style.transform = 'translateX(350px)'; // Di chuyển box2 50% sang trái

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="staylogout-AI.css">
     <title>staylogout</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -28,7 +28,7 @@
             width: 450px;
             height: 650px;
             border-radius: 5px;
-            background-color: wheat; /* Màu nền của hộp */
+            background-color: wheat;
             position: relative;
             font: message-box ;
             display:block;
@@ -61,6 +61,7 @@
             position: absolute;
             left: 25px;
             border-radius: 10px;
+            cursor: pointer;
         }
 
         .box:hover {
@@ -121,10 +122,11 @@
         <div class="icon i3"><img src="pen-clip-svgrepo-com.svg" alt="" class="rt-3"></div>
         <div class="icon i4"><img src="apple-4-svgrepo-com.svg" alt="" class="rt-4"></div>
         <div class="invisible-box">
-            <div class="box b1">học sinh</div>
-            <div class="box b2">giáo viên</div>
+            <div class="box b1" onclick="window.location.href='staylogout_AI.html'">học sinh</div>
+            <div class="box b2" onclick="window.location.href='staylogout-makeques.html'">giáo viên</div>
             <div class="box b3">phụ huynh</div>
         </div>
-    </div> 
+    </div>
+    
 </body>
 </html>
